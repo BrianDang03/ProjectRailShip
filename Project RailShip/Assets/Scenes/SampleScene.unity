@@ -666,10 +666,10 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: -5543334193539108742, guid: 7be4bcb9102a1d54d865e5f01511aa05, type: 2}
-    value: {fileID: 2002421417}
   - key: {fileID: 4120341746968121103, guid: 7be4bcb9102a1d54d865e5f01511aa05, type: 2}
     value: {fileID: 871551193}
+  - key: {fileID: -7202863624598723511, guid: 7be4bcb9102a1d54d865e5f01511aa05, type: 2}
+    value: {fileID: 2002421417}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1864753330

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float movSpeed = 30f;
-    [SerializeField] float zRange = 6f;
+    [SerializeField] float xRange = 6f;
     [SerializeField] float yRange = 8f;
 
     [SerializeField] float posPitchFactor = -2f;
@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float positionYawFactor = 2f;
     [SerializeField] float controlRollFactor = -20f;
 
-    float zThrow;
+    float xThrow;
     float yThrow;
     void Update()
     {
@@ -24,12 +24,12 @@ public class PlayerController : MonoBehaviour
     void UserInput()
     {
         //Horizontal Control Axis
-        zThrow = Input.GetAxis("Horizontal");
-        Debug.Log(zThrow);
+        xThrow = Input.GetAxis("Horizontal");
+        Debug.Log(xThrow);
 
-        float zOffset = zThrow * movSpeed * Time.deltaTime;
-        float rawZPos = transform.localPosition.z + zOffset;
-        float clampedZPos = Mathf.Clamp(rawZPos, -zRange, zRange);
+        float xOffset = xThrow * movSpeed * Time.deltaTime;
+        float rawZPos = transform.localPosition.x + xOffset;
+        float clampeXPos = Mathf.Clamp(rawZPos, -xRange, xRange);
 
         //Vertical Contorl Axis
         yThrow = Input.GetAxis("Vertical");
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
         float clampedYPos = Mathf.Clamp(rawYPos, 0, yRange);
 
         //Change the Position
-        transform.localPosition = new UnityEngine.Vector3(transform.localPosition.x, clampedYPos, clampedZPos);
+        transform.localPosition = new UnityEngine.Vector3(clampeXPos, clampedYPos, transform.localPosition.z);
     }
 
     void ShipRotation()
@@ -49,8 +49,8 @@ public class PlayerController : MonoBehaviour
         float pitchControl = yThrow * controlPitchFactor;
 
         float pitch = pitchPos + pitchControl;
-        float yaw = transform.localPosition.z * positionYawFactor - 90;
-        float roll = zThrow * controlRollFactor;
+        float yaw = transform.localPosition.x * positionYawFactor;
+        float roll = xThrow * controlRollFactor;
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 }

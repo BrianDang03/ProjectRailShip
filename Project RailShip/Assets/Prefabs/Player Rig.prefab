@@ -32,7 +32,7 @@ Transform:
   - {fileID: 2364982482133758253}
   - {fileID: 7493591358816920162}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 86.67, z: 0}
 --- !u!95 &9064640519670902754
 Animator:
@@ -237,6 +237,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5733645003158916086, guid: 6da7ac02f7bfd354aa7c125b77917311, type: 3}
   m_PrefabInstance: {fileID: 1724914938599195628}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &8100208353413526783 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7465165445912672019, guid: 6da7ac02f7bfd354aa7c125b77917311, type: 3}
+  m_PrefabInstance: {fileID: 1724914938599195628}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6155488278359798666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -314,10 +319,10 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8484417692259697319, guid: d0ee9ecd775e34846983a62b384b28da, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6368616813907101722}
+      addedObject: {fileID: 2765391289622223382}
     - targetCorrespondingSourceObject: {fileID: 8484417692259697319, guid: d0ee9ecd775e34846983a62b384b28da, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2765391289622223382}
+      addedObject: {fileID: 6368616813907101722}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9148328567788902429, guid: d0ee9ecd775e34846983a62b384b28da, type: 3}
       insertIndex: -1
@@ -352,6 +357,8 @@ MonoBehaviour:
   controlPitchFactor: -10
   positionYawFactor: 2
   controlRollFactor: -20
+  laserGunLeft: {fileID: 1038294199318505203}
+  laserGunRight: {fileID: 8100208353413526783}
 --- !u!1001 &7633983420692910560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -430,7 +437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7465165445912672019, guid: 6da7ac02f7bfd354aa7c125b77917311, type: 3}
       propertyPath: startDelay.scalar
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7465165445912672019, guid: 6da7ac02f7bfd354aa7c125b77917311, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
@@ -441,6 +448,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6da7ac02f7bfd354aa7c125b77917311, type: 3}
+--- !u!198 &1038294199318505203 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7465165445912672019, guid: 6da7ac02f7bfd354aa7c125b77917311, type: 3}
+  m_PrefabInstance: {fileID: 7633983420692910560}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2765391289622223382 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5733645003158916086, guid: 6da7ac02f7bfd354aa7c125b77917311, type: 3}

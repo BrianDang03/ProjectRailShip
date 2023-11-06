@@ -311,6 +311,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!198 &774041209 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8100208353413526783, guid: 4152414f2912836439938264ab0b2639, type: 3}
+  m_PrefabInstance: {fileID: 5460361121507075868}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &803168119 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3762018847163663829, guid: 4152414f2912836439938264ab0b2639, type: 3}
+  m_PrefabInstance: {fileID: 5460361121507075868}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &804736621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,6 +490,11 @@ MonoBehaviour:
   radius: 7.02
   minFalloff: 0.397
   maxFalloff: 0.001
+--- !u!1 &976801746 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5346929115404752857, guid: 4152414f2912836439938264ab0b2639, type: 3}
+  m_PrefabInstance: {fileID: 5460361121507075868}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1016074662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -764,9 +779,69 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1038294199318505203, guid: 4152414f2912836439938264ab0b2639, type: 3}
+      propertyPath: simulationSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038294199318505203, guid: 4152414f2912836439938264ab0b2639, type: 3}
+      propertyPath: startDelay.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038294199318505203, guid: 4152414f2912836439938264ab0b2639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038294199318505203, guid: 4152414f2912836439938264ab0b2639, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038294199318505203, guid: 4152414f2912836439938264ab0b2639, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 1638610988703626179, guid: 4152414f2912836439938264ab0b2639, type: 3}
       propertyPath: m_Name
       value: Player Rig
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130685139173273627, guid: 4152414f2912836439938264ab0b2639, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130685139173273627, guid: 4152414f2912836439938264ab0b2639, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 803168119}
+    - target: {fileID: 7130685139173273627, guid: 4152414f2912836439938264ab0b2639, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 976801746}
+    - target: {fileID: 7130685139173273627, guid: 4152414f2912836439938264ab0b2639, type: 3}
+      propertyPath: lasers.Array.data[2]
+      value: 
+      objectReference: {fileID: 774041209}
+    - target: {fileID: 7130685139173273627, guid: 4152414f2912836439938264ab0b2639, type: 3}
+      propertyPath: lasers.Array.data[3]
+      value: 
+      objectReference: {fileID: 774041209}
+    - target: {fileID: 8100208353413526783, guid: 4152414f2912836439938264ab0b2639, type: 3}
+      propertyPath: TrailModule.textureScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100208353413526783, guid: 4152414f2912836439938264ab0b2639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100208353413526783, guid: 4152414f2912836439938264ab0b2639, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100208353413526783, guid: 4152414f2912836439938264ab0b2639, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100208353413526783, guid: 4152414f2912836439938264ab0b2639, type: 3}
+      propertyPath: EmissionModule.rateOverDistance.scalar
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

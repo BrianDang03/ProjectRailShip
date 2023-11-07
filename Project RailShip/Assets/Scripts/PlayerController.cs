@@ -30,9 +30,9 @@ public class PlayerController : MonoBehaviour
     float yThrow;
     void Update()
     {
+        FireInput();
         UserInput();
         ShipRotation();
-        FireInput();
     }
 
     void UserInput()

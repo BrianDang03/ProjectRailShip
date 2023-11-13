@@ -39,7 +39,6 @@ public class PlayerController : MonoBehaviour
     {
         //Horizontal Control Axis
         xThrow = Input.GetAxis("Horizontal");
-        Debug.Log(xThrow);
 
         float xOffset = xThrow * movSpeed * Time.deltaTime;
         float rawZPos = transform.localPosition.x + xOffset;
@@ -47,7 +46,6 @@ public class PlayerController : MonoBehaviour
 
         //Vertical Control Axis
         yThrow = Input.GetAxis("Vertical");
-        Debug.Log(yThrow);
 
         float yOffset = yThrow * movSpeed * Time.deltaTime;
         float rawYPos = transform.localPosition.y + yOffset;

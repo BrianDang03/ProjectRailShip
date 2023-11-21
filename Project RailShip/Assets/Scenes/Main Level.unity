@@ -713,7 +713,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyExplosionVFX: {fileID: 7862429311618813914, guid: 23afe1ca49107de449374a94fc7ed848, type: 3}
   hitVFX: {fileID: 7862429311618813914, guid: 8ff82dd64b296e546b63405cac863a84, type: 3}
-  parent: {fileID: 2064598878}
   hitPoints: 100
   dmgPoints: 50
   enemyValue: 100
@@ -755,7 +754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8594423810750917388, guid: a36a8ba2b97c7db4ea7846b290983cfa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 136
+      value: 147.4
       objectReference: {fileID: 0}
     - target: {fileID: 8594423810750917388, guid: a36a8ba2b97c7db4ea7846b290983cfa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1304,15 +1303,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyExplosionVFX: {fileID: 7862429311618813914, guid: 23afe1ca49107de449374a94fc7ed848, type: 3}
   hitVFX: {fileID: 7862429311618813914, guid: 8ff82dd64b296e546b63405cac863a84, type: 3}
-  parent: {fileID: 2064598878}
   hitPoints: 100
   dmgPoints: 25
   enemyValue: 50
---- !u!4 &2064598878 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8376372259469022695, guid: d9292372864c57b4f971c193e5185d36, type: 3}
-  m_PrefabInstance: {fileID: 2852190994271642516}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2852190994271642516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1324,6 +1317,10 @@ PrefabInstance:
     - target: {fileID: 3372544815749214490, guid: d9292372864c57b4f971c193e5185d36, type: 3}
       propertyPath: m_Name
       value: Spawn At Runtime
+      objectReference: {fileID: 0}
+    - target: {fileID: 3372544815749214490, guid: d9292372864c57b4f971c193e5185d36, type: 3}
+      propertyPath: m_TagString
+      value: SpawnRuntime
       objectReference: {fileID: 0}
     - target: {fileID: 8376372259469022695, guid: d9292372864c57b4f971c193e5185d36, type: 3}
       propertyPath: m_RootOrder

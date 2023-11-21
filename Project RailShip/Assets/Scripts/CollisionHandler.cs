@@ -8,6 +8,10 @@ public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] ParticleSystem playerExplosionVFX;
     [SerializeField] float reloadDelay = 2f;
+
+    [Header("Laser Gun Array")]
+    [Tooltip("Add All Lasers Here")]
+    [SerializeField] GameObject[] lasers;
     void OnTriggerEnter(Collider other)
     {
         StartCrashSequence();
@@ -22,6 +26,12 @@ public class CollisionHandler : MonoBehaviour
 
     void PlayerExplosion()
     {
+        foreach (GameObject laser in lasers)
+        {
+            var emissionsModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionsModule.enabled = false;
+        }
+
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<BoxCollider>().enabled = false;
         playerExplosionVFX.Play();

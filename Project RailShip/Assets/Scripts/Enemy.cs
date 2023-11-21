@@ -6,7 +6,10 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject enemyExplosionVFX;
+    [SerializeField] GameObject hitVFX;
     [SerializeField] Transform parent;
+    [SerializeField] int hitPoints;
+    [SerializeField] int dmgPoints;
 
     ScoreBoard scoreBoard;
 
@@ -15,17 +18,33 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         scoreBoard = FindObjectOfType<ScoreBoard>();
+        AddRigidbody();
+
+    }
+
+    private void AddRigidbody()
+    {
+        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
+        rb.useGravity = false;
     }
 
     void OnParticleCollision(GameObject other)
     {
         ProcessHit();
-        DestoryEnemy();
+
+        if (hitPoints < 1)
+        {
+            DestoryEnemy();
+        }
     }
 
     private void ProcessHit()
     {
+        GameObject vfx = Instantiate(hitVFX, transform.position, Quaternion.identity);
+        vfx.transform.parent = parent;
+
         scoreBoard.incScore(enemyValue);
+        hitPoints -= dmgPoints;
     }
 
     private void DestoryEnemy()

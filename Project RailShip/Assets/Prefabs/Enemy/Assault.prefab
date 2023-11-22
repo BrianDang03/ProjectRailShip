@@ -2068,7 +2068,7 @@ GameObject:
   - component: {fileID: 4357441947114552754}
   - component: {fileID: 1889023850025314647}
   m_Layer: 0
-  m_Name: StarSparrow1
+  m_Name: Assault
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2088,7 +2088,7 @@ Transform:
   m_Children:
   - {fileID: 7073936986952852905}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2665353044680541773
 MeshFilter:
@@ -2154,10 +2154,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyExplosionVFX: {fileID: 7862429311618813914, guid: 23afe1ca49107de449374a94fc7ed848, type: 3}
   hitVFX: {fileID: 7862429311618813914, guid: 8ff82dd64b296e546b63405cac863a84, type: 3}
-  parent: {fileID: 0}
-  hitPoints: 200
-  dmgPoints: 25
-  enemyValue: 300
+  hitPoints: 100
+  dmgPoints: 50
+  enemyValue: 100
 --- !u!1 &7409362742589666029
 GameObject:
   m_ObjectHideFlags: 0

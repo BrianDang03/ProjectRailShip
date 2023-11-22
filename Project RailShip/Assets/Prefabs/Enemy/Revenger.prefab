@@ -66,7 +66,7 @@ GameObject:
   - component: {fileID: 5427426711758203937}
   - component: {fileID: 961543756018254243}
   m_Layer: 0
-  m_Name: StarSparrow17
+  m_Name: Revenger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86,7 +86,7 @@ Transform:
   m_Children:
   - {fileID: 8098238471123457604}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3764433186049565934
 MeshFilter:
@@ -152,7 +152,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyExplosionVFX: {fileID: 7862429311618813914, guid: 23afe1ca49107de449374a94fc7ed848, type: 3}
   hitVFX: {fileID: 7862429311618813914, guid: 8ff82dd64b296e546b63405cac863a84, type: 3}
-  parent: {fileID: 0}
   hitPoints: 100
   dmgPoints: 25
   enemyValue: 125

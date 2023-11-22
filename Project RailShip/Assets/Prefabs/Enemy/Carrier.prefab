@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 5527148298067623337}
   - component: {fileID: 5598446508009725547}
   m_Layer: 0
-  m_Name: StarSparrow3
+  m_Name: Carrier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -249,7 +249,7 @@ Transform:
   m_Children:
   - {fileID: 8084950826718669081}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7684134578174054309
 MeshFilter:
@@ -315,7 +315,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyExplosionVFX: {fileID: 7862429311618813914, guid: 23afe1ca49107de449374a94fc7ed848, type: 3}
   hitVFX: {fileID: 7862429311618813914, guid: 8ff82dd64b296e546b63405cac863a84, type: 3}
-  parent: {fileID: 0}
   hitPoints: 200
   dmgPoints: 25
   enemyValue: 175

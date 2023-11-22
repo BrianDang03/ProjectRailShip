@@ -813,7 +813,7 @@ GameObject:
   - component: {fileID: 12848189409460520}
   - component: {fileID: 4896901790829511424}
   m_Layer: 0
-  m_Name: StarSparrow13
+  m_Name: Scout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -899,10 +899,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyExplosionVFX: {fileID: 7862429311618813914, guid: 23afe1ca49107de449374a94fc7ed848, type: 3}
   hitVFX: {fileID: 7862429311618813914, guid: 8ff82dd64b296e546b63405cac863a84, type: 3}
-  parent: {fileID: 0}
-  hitPoints: 100
+  hitPoints: 50
   dmgPoints: 50
-  enemyValue: 200
+  enemyValue: 50
 --- !u!1 &6903800122870809519
 GameObject:
   m_ObjectHideFlags: 0

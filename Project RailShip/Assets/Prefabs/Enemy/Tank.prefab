@@ -1469,7 +1469,7 @@ GameObject:
   - component: {fileID: 7455918219940774893}
   - component: {fileID: 8701877264525773602}
   m_Layer: 0
-  m_Name: StarSparrow20
+  m_Name: Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1555,7 +1555,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyExplosionVFX: {fileID: 7862429311618813914, guid: 23afe1ca49107de449374a94fc7ed848, type: 3}
   hitVFX: {fileID: 7862429311618813914, guid: 8ff82dd64b296e546b63405cac863a84, type: 3}
-  parent: {fileID: 0}
   hitPoints: 100
   dmgPoints: 25
   enemyValue: 125

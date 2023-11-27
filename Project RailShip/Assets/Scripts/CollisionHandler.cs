@@ -6,12 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
-    [SerializeField] ParticleSystem playerExplosionVFX;
+    [SerializeField] GameObject playerExplosionFX;
     [SerializeField] float reloadDelay = 2f;
 
     [Header("Laser Gun Array")]
     [Tooltip("Add All Lasers Here")]
     [SerializeField] GameObject[] lasers;
+
+    GameObject parentGameOject;
+
+    void Start()
+    {
+        parentGameOject = GameObject.FindWithTag("SpawnRuntime");
+    }
+
     void OnTriggerEnter(Collider other)
     {
         StartCrashSequence();
@@ -34,7 +42,9 @@ public class CollisionHandler : MonoBehaviour
 
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<BoxCollider>().enabled = false;
-        playerExplosionVFX.Play();
+
+        GameObject fx = Instantiate(playerExplosionFX, transform.position, Quaternion.identity);
+        fx.transform.parent = parentGameOject.transform;
     }
 
     void ReloadLevel()

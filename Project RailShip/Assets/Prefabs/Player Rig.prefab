@@ -32,7 +32,7 @@ Transform:
   - {fileID: 2364982482133758253}
   - {fileID: 7493591358816920162}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 86.67, z: 0}
 --- !u!95 &9064640519670902754
 Animator:
@@ -66,6 +66,7 @@ GameObject:
   - component: {fileID: 7493591358816920162}
   - component: {fileID: 3720562927359106437}
   - component: {fileID: 6623307710738588007}
+  - component: {fileID: 8920745944219447649}
   m_Layer: 0
   m_Name: Player Camera
   m_TagString: Untagged
@@ -147,6 +148,66 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7411137434813254881}
   m_Enabled: 1
+--- !u!114 &8920745944219447649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7411137434813254881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 7493591358816920162}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 1
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 1
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1001 &1653727237743331081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -223,11 +284,6 @@ PrefabInstance:
 --- !u!4 &485451311353676681 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1175319984439526528, guid: f1effbd0f0e265a40958f32fdec087fe, type: 3}
-  m_PrefabInstance: {fileID: 1653727237743331081}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &2368644624202913948 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 3903536300008185749, guid: f1effbd0f0e265a40958f32fdec087fe, type: 3}
   m_PrefabInstance: {fileID: 1653727237743331081}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1724914938599195628
@@ -463,7 +519,7 @@ MonoBehaviour:
   yRange: 9
   posPitchFactor: -2
   positionYawFactor: 2
-  controlPitchFactor: -10
+  controlPitchFactor: -5
   controlRollFactor: -20
   lasers:
   - {fileID: 3762018847163663829}
@@ -501,7 +557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a267cebf2274b6b47affd69059a79ad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerExplosionVFX: {fileID: 2368644624202913948}
+  playerExplosionFX: {fileID: 7862429311618813914, guid: f1effbd0f0e265a40958f32fdec087fe, type: 3}
   reloadDelay: 1
   lasers:
   - {fileID: 3762018847163663829}

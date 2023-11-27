@@ -1326,7 +1326,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 886007352702298710, guid: 61cdccd1960efbc4ca0ece47d418d65f, type: 3}
+      propertyPath: m_fontSize
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 886007352702298710, guid: 61cdccd1960efbc4ca0ece47d418d65f, type: 3}
       propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 886007352702298710, guid: 61cdccd1960efbc4ca0ece47d418d65f, type: 3}
+      propertyPath: m_enableAutoSizing
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 886007352702298710, guid: 61cdccd1960efbc4ca0ece47d418d65f, type: 3}
@@ -1336,6 +1344,14 @@ PrefabInstance:
     - target: {fileID: 886007352702298710, guid: 61cdccd1960efbc4ca0ece47d418d65f, type: 3}
       propertyPath: m_HorizontalAlignment
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010100884486983561, guid: 61cdccd1960efbc4ca0ece47d418d65f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010100884486983561, guid: 61cdccd1960efbc4ca0ece47d418d65f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 1297974384145647669, guid: 61cdccd1960efbc4ca0ece47d418d65f, type: 3}
       propertyPath: m_Name
@@ -1347,7 +1363,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1708847887565581041, guid: 61cdccd1960efbc4ca0ece47d418d65f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 150
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404289152511408028, guid: 61cdccd1960efbc4ca0ece47d418d65f, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404289152511408028, guid: 61cdccd1960efbc4ca0ece47d418d65f, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
